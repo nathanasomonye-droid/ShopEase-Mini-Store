@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Mini Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            Shop<span>Ease</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+            <span>🔍</span>
+        </div>
+
+        <button class="cart-btn" id="cartBtn">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">NEW COLLECTION 2026</p>
+
+            <h1>
+                Find Your
+                <span>Perfect Style.</span>
+            </h1>
+
+            <p>
+                Discover modern fashion, accessories and everyday
+                essentials carefully selected for you.
+            </p>
+
+            <a href="#products" class="hero-btn">
+                Shop Now →
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+                alt="Shopping store"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+
+        <div class="section-title">
+            <h2>Shop by Category</h2>
+            <p>Explore our popular categories</p>
+        </div>
+
+        <div class="categories">
+
+            <div class="category">
+                <div class="category-icon">👕</div>
+                <h3>Fashion</h3>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">👟</div>
+                <h3>Shoes</h3>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">⌚</div>
+                <h3>Accessories</h3>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">🎧</div>
+                <h3>Electronics</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="section" id="products">
+
+        <div class="section-title">
+            <h2>Featured Products</h2>
+            <p>Check out our popular products</p>
+        </div>
+
+        <div class="products" id="productGrid">
+
+            <!-- Product 1 -->
+            <div
+                class="product"
+                data-name="Classic T-Shirt"
+                data-category="Fashion"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge">New</span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="Classic T-Shirt"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>Fashion</small>
+
+                    <h3>Classic T-Shirt</h3>
+
+                    <div class="rating">★★★★★</div>
+
+                    <div class="product-bottom">
+
+                        <strong>$29.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Classic T-Shirt"
+                            data-price="29.99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div
+                class="product"
+                data-name="Running Shoes"
+                data-category="Shoes"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge">Sale</span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+                        alt="Running Shoes"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>Shoes</small>
+
+                    <h3>Running Shoes</h3>
+
+                    <div class="rating">★★★★★</div>
+
+                    <div class="product-bottom">
+
+                        <strong>$79.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Running Shoes"
+                            data-price="79.99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div
+                class="product"
+                data-name="Classic Watch"
+                data-category="Accessories"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=80"
+                        alt="Classic Watch"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>Accessories</small>
+
+                    <h3>Classic Watch</h3>
+
+                    <div class="rating">★★★★☆</div>
+
+                    <div class="product-bottom">
+
+                        <strong>$119.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Classic Watch"
+                            data-price="119.99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div
+                class="product"
+                data-name="Wireless Headphones"
+                data-category="Electronics"
+            >
+
+                <div class="product-image">
+
+                    <span class="badge">Popular</span>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+                        alt="Wireless Headphones"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <small>Electronics</small>
+
+                    <h3>Wireless Headphones</h3>
+
+                    <div class="rating">★★★★★</div>
+
+                    <div class="product-bottom">
+
+                        <strong>$89.99</strong>
+
+                        <button
+                            class="add-btn"
+                            data-name="Wireless Headphones"
+                            data-price="89.99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+
+        <h2>Stay in the Loop</h2>
+
+        <p>
+            Subscribe for new products and special offers.
+        </p>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <div>
+                <h3>Shop<span>Ease</span></h3>
+
+                <p>
+                    Your simple destination for fashion,
+                    accessories and everyday essentials.
+                </p>
+            </div>
+
+            <div>
+                <h3>Shop</h3>
+
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">New Arrivals</a>
+            </div>
+
+            <div>
+                <h3>Support</h3>
+
+                <a href="#">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 ShopEase. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
